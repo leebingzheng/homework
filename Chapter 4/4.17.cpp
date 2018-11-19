@@ -1,23 +1,28 @@
 #include <iostream>
+
 using namespace std;
 
- int main()
+int main()
 {
-int a=0;
-int b=1;
-int num=0;
-int c=0;
+    int counter=0;
+    int a;
+    int b;
+
+    cout <<"Please enter the first number:";
+    cin>>b;
+
+    while(counter<10)
+    {
+
+        cout<<"Please enter the next number£º"<<endl;
+        cin>>a;
+        counter=counter+1;
+        if(a>b)
+            b=a;
 
 
-std::cin>>a;
-while (a>0)
-{
-    c =a%10;
-    num=num+b*c;
-    a=a/10;
-    b=b*2;
-}
+    }
+    cout<<"Largest is "<<b<<endl;
 
-cout <<num<<endl;
-return 0;
+
 }
